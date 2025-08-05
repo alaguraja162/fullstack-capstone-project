@@ -9,9 +9,6 @@ let dbInstance = null;
 const dbName = "giftdb";
 
 async function connectToDatabase() {
-    if (dbInstance){
-        return dbInstance
-    };
 
     const client = new MongoClient(url);      
 
@@ -22,7 +19,9 @@ async function connectToDatabase() {
     const dbInstance = client.db(dbName);
 
     // Task 3: Return database instance
-    return dbInstance;
+    if (dbInstance){
+        return dbInstance
+    };
 }
 
 module.exports = connectToDatabase;
