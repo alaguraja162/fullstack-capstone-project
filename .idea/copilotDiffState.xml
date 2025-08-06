@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/giftlink-frontend/src/App.js">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/giftlink-frontend/src/App.js" />
+              <option name="originalContent" value="import React from 'react';&#10;import { Routes, Route } from 'react-router-dom';&#10;import MainPage from './components/MainPage/MainPage';&#10;import LoginPage from './components/LoginPage/LoginPage';&#10;import RegisterPage from './components/RegisterPage/RegisterPage';&#10;import 'bootstrap/dist/css/bootstrap.min.css';&#10;import './App.css';&#10;import Navbar from './components/Navbar/Navbar';&#10;&#10;function App() {&#10;&#10;  return (&#10;    &lt;&gt;&#10;        &lt;Navbar/&gt;&#10;        &lt;Routes&gt;&#10;          {/* the final code will not pass the products to every page, but each page will call the server API */}&#10;          &lt;Route path=&quot;/&quot; element={&lt;MainPage /&gt;} /&gt;&#10;          &lt;Route path=&quot;/app&quot; element={&lt;MainPage /&gt;} /&gt;&#10;          &lt;Route path=&quot;/app/login&quot; element={&lt;LoginPage/&gt;} /&gt;&#10;          &lt;Route path=&quot;/app/register&quot; element={&lt;RegisterPage /&gt;} /&gt;&#10;        &lt;/Routes&gt;&#10;        &lt;/&gt;&#10;  );&#10;}&#10;&#10;export default App;&#10;" />
+              <option name="updatedContent" value="import React from 'react';&#13;&#10;import { Routes, Route } from 'react-router-dom';&#13;&#10;import MainPage from './components/MainPage/MainPage';&#13;&#10;import LoginPage from './components/LoginPage/LoginPage';&#13;&#10;import RegisterPage from './components/RegisterPage/RegisterPage';&#13;&#10;import DetailsPage from './components/DetailsPage/DetailsPage';&#13;&#10;import 'bootstrap/dist/css/bootstrap.min.css';&#13;&#10;import './App.css';&#13;&#10;import Navbar from './components/Navbar/Navbar';&#13;&#10;&#13;&#10;function App() {&#13;&#10;&#13;&#10;  return (&#13;&#10;    &lt;&gt;&#13;&#10;        &lt;Navbar/&gt;&#13;&#10;        &lt;Routes&gt;&#13;&#10;          {/* the final code will not pass the products to every page, but each page will call the server API */}&#13;&#10;          &lt;Route path=&quot;/&quot; element={&lt;MainPage /&gt;} /&gt;&#13;&#10;          &lt;Route path=&quot;/app&quot; element={&lt;MainPage /&gt;} /&gt;&#13;&#10;          &lt;Route path=&quot;/app/login&quot; element={&lt;LoginPage/&gt;} /&gt;&#13;&#10;          &lt;Route path=&quot;/app/register&quot; element={&lt;RegisterPage /&gt;} /&gt;&#13;&#10;          &lt;Route path=&quot;/app/product/:productId&quot; element={&lt;DetailsPage /&gt;} /&gt;&#13;&#10;        &lt;/Routes&gt;&#13;&#10;        &lt;/&gt;&#13;&#10;  );&#13;&#10;}&#13;&#10;&#13;&#10;export default App;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
